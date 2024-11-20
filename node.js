@@ -13,9 +13,9 @@ app.use(cors());
   });
 
 const options = {
-  key: fs.readFileSync('./ssl/kof.key'),
-  cert: fs.readFileSync('./ssl/kof.crt'),
-  ca: fs.readFileSync('./ssl/kof.ca-bundle')
+  key: fs.readFileSync('../ssl/kof.key'),
+  cert: fs.readFileSync('../ssl/kof.crt'),
+  ca: fs.readFileSync('../ssl/kof.ca-bundle')
 };
 
 https.createServer(options, app).listen(443,()=>{console.log('Server is running on https://localhost:443');})
