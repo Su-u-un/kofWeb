@@ -671,10 +671,10 @@ z-index: 1;
     font-weight: 400;
   }
   #black1{   
-    position: absolute; width: 1.8rem;height: 1.85rem;background-color: black;opacity: 0.6;top: 3rem; left: 3.8rem;z-index: 1;
+    position: absolute; width: 1.8rem;height: 1.85rem;background-color: black;opacity: 0.6;top: 3rem; left: 0.13rem;z-index: 1;
   }
   #black2{
-    position: absolute; width: 1.8rem;height: 1.85rem;background-color: black;opacity: 0.6;top: 3rem; left: 3.8rem;z-index: 1;
+    position: absolute; width: 1.8rem;height: 1.85rem;background-color: black;opacity: 0.6;top: 3rem; left: 1.9rem;z-index: 1;
   }
   #black3{
     position: absolute; width: 1.8rem;height: 1.85rem;background-color: black;opacity: 0.6;top: 3rem; left: 3.8rem;z-index: 1;
