@@ -25,7 +25,7 @@ body {
 @media (max-width: 478px) {
   .container {
     background: url(../images/phone/BG.png) center no-repeat;
-    background-size: 100% 100%;
+    background-size: 110% 110%;
     background-attachment: fixed;
   }
   .bg1 {
