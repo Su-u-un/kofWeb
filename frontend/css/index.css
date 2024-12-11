@@ -23,6 +23,14 @@ body {
 
 /* phone */
 @media (max-width: 478px) {
+  .bg1 .linkBox {
+    position: absolute;
+    display: flex;
+    top: 0.7rem;
+    left: 0.7rem;
+    width: 2.8rem;
+    height: 0.8rem;
+  }
   .container {
     background: url(../images/phone/BG.png) center no-repeat;
     background-size: 110% 110%;
@@ -488,6 +496,14 @@ z-index: 1;
 }
 /* pc */
 @media (min-width: 478px) {
+  .bg1 .linkBox {
+    position: absolute;
+    display: flex;
+    top: 0.3rem;
+    left: 0.4rem;
+    width: 1.3rem;
+    height: 0.5rem;
+  }
   .container {
     background: url(../images/box2/Black.webp) center no-repeat;
     background-size: 190%;
@@ -773,7 +789,7 @@ z-index: 1;
   justify-content: space-between;
  position: absolute;
  bottom: 0;
- height: 0.4rem;
+ height: 0.5rem;
  width: 100%;
  border-top:1px solid rgb(246, 255, 0);
 }
@@ -796,8 +812,8 @@ z-index: 1;
   position: absolute;
   top: 0;
   right: 2.5rem;
-  width: 2.2rem;
-  height: 0.38rem;
+  width: 1.5rem;
+  height: 0.5rem;
   background: url(../images/box1/logo.png) no-repeat center;
   background-size: 75%;
 }
@@ -961,14 +977,7 @@ z-index: 1;
 .bg1 .link-wrapper.hidden .link {
   transform: translateX(85%);
 }
-.bg1 .linkBox {
-  position: absolute;
-  display: flex;
-  top: 0.3rem;
-  left: 0.4rem;
-  width: 1.3rem;
-  height: 0.5rem;
-}
+
 .bg1 .linkBox a {
   flex: 1;
 }
