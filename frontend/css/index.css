@@ -437,7 +437,7 @@ z-index: 1;
   width: 2.3rem;
   height: 1rem;
   background: url(../images/box4/text/Beast.png) no-repeat center;
-  background-size: 70%;
+  background-size: 100%;
 }
 .jade .text6 {
   position: absolute;
@@ -446,7 +446,7 @@ z-index: 1;
   width: 2.3rem;
   height: 1rem;
   background: url(../images/box4/text/WAR.png) no-repeat;
-  background-size: 100%;
+  background-size: 90%;
 }
 .jade .area1 {
   position: absolute;
@@ -889,7 +889,7 @@ z-index: 1;
   width: 1rem;
   height: 0.4rem;
   background: url(../images/box4/text/Beast.png) no-repeat center;
-  background-size: 70%;
+  background-size: 100%;
 }
 .jade .text6 {
   position: absolute;
@@ -898,7 +898,7 @@ z-index: 1;
   width: 1rem;
   height: 0.5rem;
   background: url(../images/box4/text/WAR.png) no-repeat;
-  background-size: 100%;
+  background-size: 90%;
 }
 .jade .area1 {
   position: absolute;
