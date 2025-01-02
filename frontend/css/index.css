@@ -419,7 +419,7 @@ z-index: 1;
   width: 2.3rem;
   height: 1rem;
   background: url(../images/box4/text/land.png) no-repeat center;
-  background-size: 50%;
+  background-size: 100%;
 }
 .jade .text4 {
   position: absolute;
@@ -442,11 +442,11 @@ z-index: 1;
 .jade .text6 {
   position: absolute;
   top: 2.7rem;
-  left: 6.5rem;
+  left: 6.3rem;
   width: 2.3rem;
   height: 1rem;
   background: url(../images/box4/text/WAR.png) no-repeat;
-  background-size: 65%;
+  background-size: 100%;
 }
 .jade .area1 {
   position: absolute;
@@ -871,7 +871,7 @@ z-index: 1;
   width: 1rem;
   height: 0.35rem;
   background: url(../images/box4/text/land.png) no-repeat center;
-  background-size: 50%;
+  background-size: 100%;
 }
 .jade .text4 {
   position: absolute;
@@ -893,12 +893,12 @@ z-index: 1;
 }
 .jade .text6 {
   position: absolute;
-  top: 2rem;
+  top: 1.9rem;
   left: 3.4rem;
   width: 1rem;
-  height: 0.4rem;
+  height: 0.5rem;
   background: url(../images/box4/text/WAR.png) no-repeat;
-  background-size: 65%;
+  background-size: 100%;
 }
 .jade .area1 {
   position: absolute;
