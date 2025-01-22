@@ -41,7 +41,7 @@ body {
   }
   .swiper{
     position: fixed;
-    top: 40%;
+    top: 7.5rem;
     width: 100%;
     overflow: hidden;
     z-index: 999;
@@ -610,7 +610,7 @@ z-index: 1;
   .left_1 {
     display: none;
     position: fixed;
-    top: 45%;
+    top: 2.7rem;
     left: 0.6rem;
     width: 1rem;
     height: 1rem;
@@ -621,7 +621,7 @@ z-index: 1;
   .right_1 {
     display: none;
     position: fixed;
-    top: 45%;
+    top: 2.7rem;
     right: 0.6rem;
     width: 1rem;
     height: 1rem;
@@ -637,7 +637,7 @@ z-index: 1;
   }
   .swiper{
     position: fixed;
-    top: 25%;
+    top: 1.5rem;
     width: 100%;
     overflow: hidden;
     z-index: 888;
