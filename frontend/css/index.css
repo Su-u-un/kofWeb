@@ -33,6 +33,31 @@ body {
 
 /* phone */
 @media (max-width: 478px) {
+  .mobile {
+    display: none;
+  }
+  .pcPopup{
+    display: none;
+  }
+  .swiper{
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+  }
+  .swiper-slide {
+    display: flex;
+    gap:6rem;
+    width:8rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-slide img{
+    display: block;
+    width: 8rem;
+    object-fit: cover;
+  }
   .popup1 {
     display: none;
     position: fixed;
@@ -582,6 +607,53 @@ z-index: 1;
 }
 /* pc */
 @media (min-width: 478px) {
+  .left_1 {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/left.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .right_1 {
+    display: none;
+    position: fixed;
+    top: 45%;
+    right: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/right.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .mobile {
+    display: none;
+  }
+  .pcPopup {
+    display: none;
+  }
+  .swiper{
+    position: fixed;
+    top: 25%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 888;
+  }
+  .swiper-slide {
+    display: flex;
+    gap:4rem;
+    width:6rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-slide img{
+    display: block;
+    width: 6rem;
+    object-fit: cover;
+  }
   .popup1 {
     display: none;
     position: fixed;

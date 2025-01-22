@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
 <script src="./js/flexible.js"></script>
 </head>
 <body>
@@ -35,12 +37,30 @@
     </div>
     <div class="mask"></div>
 
-    <div class="popup1"></div>
-    <div class="popup2"></div>
-    <div class="popup3"></div>
-    <div class="popup4"></div>
-    <div class="popup5"></div>
-    <div class="popup6"></div>
+    <div class="left_1"></div>
+    <div class="right_1"></div>
+
+    <div class="swiper mySwiper1 zoomable pcPopup">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/popup1.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/popup2.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/popup3.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/popup4.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/popup5.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/popup6.svg"></div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper2 zoomable mobile">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/mobile1.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile2.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile3.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile4.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile5.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile6.svg"></div>
+      </div>
+    </div>
 
     <div class="shade1">
       <!-- <div class="shadow2"></div> -->
@@ -202,17 +222,29 @@ async function preloadAll() {
     console.error('Error preloading images:', error);
   }
 }
-
+function isPC() {
+    const userAgent = navigator.userAgent;
+    return !/(iPhone|iPod|iPad|Android)/i.test(userAgent);
+  }
 preloadAll();
-
+var swiper1 = new Swiper(".mySwiper1", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1.15 : 1.5,
+    spaceBetween: -10,
+    centeredSlides: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1.15 : 1.5,
+    spaceBetween: -10,
+    centeredSlides: true,
+  });
     // const areas = document.querySelectorAll('.area');
     const mask = document.querySelector('.mask');
-    const popup1 = document.querySelector('.popup1');
-    const popup2 = document.querySelector('.popup2');
-    const popup3 = document.querySelector('.popup3');
-    const popup4 = document.querySelector('.popup4');
-    const popup5 = document.querySelector('.popup5');
-    const popup6 = document.querySelector('.popup6');
+    const pcPopup = document.querySelector('.pcPopup');
+    const mobile = document.querySelector('.mobile');
+    const left = document.querySelector('.left_1');
+    const right = document.querySelector('.right_1');
 
     const area1=document.querySelector('.area1');
     const area2=document.querySelector('.area2');
@@ -230,37 +262,28 @@ preloadAll();
 
 mask.addEventListener('click', () => {
   mask.style.display = 'none';
-  popup1.style.display = 'none';
-  popup2.style.display = 'none';
-  popup3.style.display = 'none';
-  popup4.style.display = 'none';
-  popup5.style.display = 'none';
-  popup6.style.display = 'none';
+  pcPopup.style.display = 'none';
+  mobile.style.display = 'none';
+  left.style.display = 'none';
+  right.style.display = 'none';
 });
 area1.addEventListener('click', () => {
   mask.style.display = 'block';
-  popup1.style.display = 'block';
+  if(isPC()){
+    pcPopup.style.display = 'block';
+    left.style.display = 'block';
+    right.style.display = 'block';
+  }else{
+    mobile.style.display = 'block';
+  }
 });
-area2.addEventListener('click', () => {
-  mask.style.display = 'block';
-  popup2.style.display = 'block';
-});
-area3.addEventListener('click', () => {
-  mask.style.display = 'block';
-  popup3.style.display = 'block';
-});
-area4.addEventListener('click', () => {
-  mask.style.display = 'block';
-  popup4.style.display = 'block';
-});
-area5.addEventListener('click', () => {
-  mask.style.display = 'block';
-  popup5.style.display = 'block';
-});
-area6.addEventListener('click', () => {
-  mask.style.display = 'block';
-  popup6.style.display = 'block';
-});
+left.addEventListener('click', () => {
+    swiper1.slidePrev();
+  })
+
+  right.addEventListener('click', () => {
+    swiper1.slideNext();
+  })
 
 
 
