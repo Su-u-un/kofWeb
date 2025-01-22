@@ -33,6 +33,15 @@
         </div>
       </div>
     </div>
+    <div class="mask"></div>
+
+    <div class="popup1"></div>
+    <div class="popup2"></div>
+    <div class="popup3"></div>
+    <div class="popup4"></div>
+    <div class="popup5"></div>
+    <div class="popup6"></div>
+
     <div class="shade1">
       <!-- <div class="shadow2"></div> -->
       <!-- <div class="icon"></div> -->
@@ -197,6 +206,14 @@ async function preloadAll() {
 preloadAll();
 
     // const areas = document.querySelectorAll('.area');
+    const mask = document.querySelector('.mask');
+    const popup1 = document.querySelector('.popup1');
+    const popup2 = document.querySelector('.popup2');
+    const popup3 = document.querySelector('.popup3');
+    const popup4 = document.querySelector('.popup4');
+    const popup5 = document.querySelector('.popup5');
+    const popup6 = document.querySelector('.popup6');
+
     const area1=document.querySelector('.area1');
     const area2=document.querySelector('.area2');
     const area3=document.querySelector('.area3');
@@ -211,13 +228,49 @@ preloadAll();
     const text6=document.querySelector('.text6');
     const backImage = document.querySelector('.jade');
 
+mask.addEventListener('click', () => {
+  mask.style.display = 'none';
+  popup1.style.display = 'none';
+  popup2.style.display = 'none';
+  popup3.style.display = 'none';
+  popup4.style.display = 'none';
+  popup5.style.display = 'none';
+  popup6.style.display = 'none';
+});
+area1.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup1.style.display = 'block';
+});
+area2.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup2.style.display = 'block';
+});
+area3.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup3.style.display = 'block';
+});
+area4.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup4.style.display = 'block';
+});
+area5.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup5.style.display = 'block';
+});
+area6.addEventListener('click', () => {
+  mask.style.display = 'block';
+  popup6.style.display = 'block';
+});
+
+
+
 area1.addEventListener('mouseenter', async () => {
   area1.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[0]);
-    text1.style.backgroundImage = `url(${preloadImages[9]}`;
-    text1.style.transition = 'background-image 0.1s ease-in-out';
-    text1.style.backgroundSize  = '90%';
+    // text1.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text1.style.transition = 'background-image 0.1s ease-in-out';
+    // text1.style.backgroundSize  = '90%';
     backImage.style.backgroundImage = `url(${preloadImages[0]})`;
     backImage.style.transition = 'background-image 0.3s ease-in-out';
   } catch (error) {
@@ -228,18 +281,18 @@ area1.addEventListener('mouseenter', async () => {
 area1.addEventListener('mouseleave', () => {
   area1.style.cursor = 'default';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
-  text1.style.backgroundImage = `url(${preloadImages[10]}`;
-  text1.style.backgroundSize  = '70%';
-  text1.style.transition = 'background-image 0.1s ease-in-out';
+  // text1.style.backgroundImage = `url(${preloadImages[10]}`;
+  // text1.style.backgroundSize  = '70%';
+  // text1.style.transition = 'background-image 0.1s ease-in-out';
 });
 
 area2.addEventListener('mouseenter', async () => {
   area2.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[1]);
-    text2.style.backgroundImage = `url(${preloadImages[9]}`;
-    text2.style.transition = 'background-image 0.1s ease-in-out';
-    text2.style.backgroundSize  = '90%';
+    // text2.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text2.style.transition = 'background-image 0.1s ease-in-out';
+    // text2.style.backgroundSize  = '90%';
     backImage.style.backgroundImage = `url(${preloadImages[1]})`;
     backImage.style.transition = 'background-image 0.3s ease-in-out';
   } catch (error) {
@@ -249,9 +302,9 @@ area2.addEventListener('mouseenter', async () => {
 
 area2.addEventListener('mouseleave', () => {
   area2.style.cursor = 'default';
-  text2.style.backgroundImage = "url(./images/box4/text/kof.png)";
-    text2.style.transition = 'background-image 0.1s ease-in-out';
-    text2.style.backgroundSize  = '70%';
+  // text2.style.backgroundImage = "url(./images/box4/text/kof.png)";
+  //   text2.style.transition = 'background-image 0.1s ease-in-out';
+  //   text2.style.backgroundSize  = '70%';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
 });
 
@@ -259,9 +312,9 @@ area3.addEventListener('mouseenter', async () => {
   area3.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[2]);
-    text4.style.backgroundImage = `url(${preloadImages[9]}`;
-    text4.style.transition = 'background-image 0.1s ease-in-out';
-    text4.style.backgroundSize  = '50%';
+    // text4.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text4.style.transition = 'background-image 0.1s ease-in-out';
+    // text4.style.backgroundSize  = '50%';
     backImage.style.backgroundImage = `url(${preloadImages[2]})`;
     backImage.style.transition = 'background-image 0.7s ease-in-out';
   } catch (error) {
@@ -270,9 +323,9 @@ area3.addEventListener('mouseenter', async () => {
 });
 
 area3.addEventListener('mouseleave', () => {
-  text4.style.backgroundImage = "url(./images/box4/text/Incubation.png)";
-    text4.style.transition = 'background-image 0.1s ease-in-out';
-    text4.style.backgroundSize  = '65%';
+  // text4.style.backgroundImage = "url(./images/box4/text/Incubation.png)";
+  //   text4.style.transition = 'background-image 0.1s ease-in-out';
+  //   text4.style.backgroundSize  = '65%';
   area3.style.cursor = 'default';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
 });
@@ -281,9 +334,9 @@ area4.addEventListener('mouseenter', async () => {
   area4.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[3]);
-    text3.style.backgroundImage = `url(${preloadImages[9]}`;
-    text3.style.transition = 'background-image 0.1s ease-in-out';
-    text3.style.backgroundSize  = '90%';
+    // text3.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text3.style.transition = 'background-image 0.1s ease-in-out';
+    // text3.style.backgroundSize  = '90%';
     backImage.style.backgroundImage = `url(${preloadImages[3]})`;
     backImage.style.transition = 'background-image 0.4s ease-in-out';
   } catch (error) {
@@ -293,18 +346,18 @@ area4.addEventListener('mouseenter', async () => {
 
 area4.addEventListener('mouseleave', () => {
   area4.style.cursor = 'default';
-  text3.style.backgroundImage = "url(./images/box4/text/land.png)";
-    text3.style.transition = 'background-image 0.1s ease-in-out';
-    text3.style.backgroundSize  = '100%';
+  // text3.style.backgroundImage = "url(./images/box4/text/land.png)";
+  //   text3.style.transition = 'background-image 0.1s ease-in-out';
+  //   text3.style.backgroundSize  = '100%';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
 });
 area5.addEventListener('mouseenter', async () => {
   area5.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[4]);
-    text6.style.backgroundImage = `url(${preloadImages[9]}`;
-    text6.style.transition = 'background-image 0.1s ease-in-out';
-    text6.style.backgroundSize  = '90%';
+    // text6.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text6.style.transition = 'background-image 0.1s ease-in-out';
+    // text6.style.backgroundSize  = '90%';
     backImage.style.backgroundImage = `url(${preloadImages[4]})`;
     backImage.style.transition = 'background-image 0.7s ease-in-out';
   } catch (error) {
@@ -314,18 +367,18 @@ area5.addEventListener('mouseenter', async () => {
 
 area5.addEventListener('mouseleave', () => {
   area5.style.cursor = 'default';
-  text6.style.backgroundImage = "url(./images/box4/text/WAR.png)";
-    text6.style.transition = 'background-image 0.1s ease-in-out';
-    text6.style.backgroundSize  = '90%';
+  // text6.style.backgroundImage = "url(./images/box4/text/WAR.png)";
+  //   text6.style.transition = 'background-image 0.1s ease-in-out';
+  //   text6.style.backgroundSize  = '90%';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
 });
 area6.addEventListener('mouseenter', async () => {
   area6.style.cursor = 'pointer';
   try {
     await preloadImage(preloadImages[5]);
-    text5.style.backgroundImage = `url(${preloadImages[9]}`;
-    text5.style.transition = 'background-image 0.1s ease-in-out';
-    text5.style.backgroundSize  = '90%';
+    // text5.style.backgroundImage = `url(${preloadImages[9]}`;
+    // text5.style.transition = 'background-image 0.1s ease-in-out';
+    // text5.style.backgroundSize  = '90%';
     backImage.style.backgroundImage = `url(${preloadImages[5]})`;
     backImage.style.transition = 'background-image 0.7s ease-in-out';
   } catch (error) {
@@ -335,9 +388,9 @@ area6.addEventListener('mouseenter', async () => {
 
 area6.addEventListener('mouseleave', () => {
   area6.style.cursor = 'default';
-  text5.style.backgroundImage = "url(./images/box4/text/Beast.png)";
-    text5.style.transition = 'background-image 0.1s ease-in-out';
-    text5.style.backgroundSize  = '100%';
+  // text5.style.backgroundImage = "url(./images/box4/text/Beast.png)";
+  //   text5.style.transition = 'background-image 0.1s ease-in-out';
+  //   text5.style.backgroundSize  = '100%';
   backImage.style.backgroundImage = `url(${preloadImages[6]})`;
 });
 const avatars = document.querySelectorAll('.avatar');
