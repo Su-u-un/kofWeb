@@ -610,7 +610,8 @@ z-index: 1;
   .left_1 {
     display: none;
     position: fixed;
-    top: 2.7rem;
+    top: 50%;
+    transform: translate(0,-50%);
     left: 0.6rem;
     width: 1rem;
     height: 1rem;
@@ -621,7 +622,8 @@ z-index: 1;
   .right_1 {
     display: none;
     position: fixed;
-    top: 2.7rem;
+    top: 50%;
+    transform: translate(0,-50%);
     right: 0.6rem;
     width: 1rem;
     height: 1rem;
@@ -637,7 +639,8 @@ z-index: 1;
   }
   .swiper{
     position: fixed;
-    top: 1.5rem;
+    top: 50%;
+    transform: translate(0,-50%);
     width: 100%;
     overflow: hidden;
     z-index: 888;
