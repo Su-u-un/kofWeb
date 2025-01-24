@@ -49,13 +49,13 @@ body {
   .swiper-slide {
     display: flex;
     gap:6rem;
-    width:8rem;
+    width:100%;
     align-items: center;
     justify-content: center;
   }
   .swiper-slide img{
     display: block;
-    width: 8rem;
+    width: 100%;
     object-fit: cover;
   }
   .popup1 {
