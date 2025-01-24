@@ -53,12 +53,12 @@
 
     <div class="swiper mySwiper2 zoomable mobile">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/area/mobile1.svg"></div>
-        <div class="swiper-slide"><img src="./images/area/mobile2.svg"></div>
-        <div class="swiper-slide"><img src="./images/area/mobile3.svg"></div>
-        <div class="swiper-slide"><img src="./images/area/mobile4.svg"></div>
-        <div class="swiper-slide"><img src="./images/area/mobile5.svg"></div>
-        <div class="swiper-slide"><img src="./images/area/mobile6.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile1.svg" id="mb1"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile2.svg" id="mb2"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile3.svg" id="mb3"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile4.svg" id="mb4"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile5.svg" id="mb5"></div>
+        <div class="swiper-slide"><img src="./images/area/mobile6.svg" id="mb6"></div>
       </div>
     </div>
 
@@ -143,42 +143,10 @@
                 <div class="area6"></div>
             </div>
             
-            <!-- <div class="line">
-            </div> -->
             <div class="mirrorContainer">
              
              <div class="mirror">
               <div class="content">
-                <!-- <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div>
-                <div class="avatar"></div> -->
                 <div id="roleBox">
                   <div class="image" id="image1"></div>
                   <div class="image hidden" id="image2"></div>
@@ -259,6 +227,32 @@ var swiper1 = new Swiper(".mySwiper1", {
     const text5=document.querySelector('.text5');
     const text6=document.querySelector('.text6');
     const backImage = document.querySelector('.jade');
+
+    const mb1 = document.querySelector('#mb1');
+    const mb2 = document.querySelector('#mb2');
+    const mb3 = document.querySelector('#mb3');
+    const mb4 = document.querySelector('#mb4');
+    const mb5 = document.querySelector('#mb5');
+    const mb6 = document.querySelector('#mb6');
+
+    mb1.addEventListener('click', () => {
+      window.location.href = './mb1.html';
+    });
+    mb2.addEventListener('click', () => {
+      window.location.href = './mb2.html';
+    });
+    mb3.addEventListener('click', () => {
+      window.location.href = './mb3.html';
+    });
+    mb4.addEventListener('click', () => {
+      window.location.href = './mb4.html';
+    });
+    mb5.addEventListener('click', () => {
+      window.location.href = './mb5.html';
+    });
+    mb6.addEventListener('click', () => {
+      window.location.href = './mb6.html';
+    });
 
 mask.addEventListener('click', () => {
   mask.style.display = 'none';
