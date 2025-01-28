@@ -20,7 +20,6 @@
       <!-- <div class="shadow1"></div> -->
      <div class="title"></div>
      <div class="brand"><span style="font-family: math;">©</span><span>SNK CORPORATION ALL RIGHTS RESERVED.</span></div>
-     <!-- <div class="kof"></div> -->
       <div class="buynow"></div>
       <div class="notice">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pg4vXZWg9nQ?si=dqNEqVxzUMLcRSdh&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -39,6 +38,10 @@
 
     <div class="left_1"></div>
     <div class="right_1"></div>
+    <div class="left_2"></div>
+    <div class="right_2"></div>
+    <div class="left_3"></div>
+    <div class="right_3"></div>
 
     <div class="swiper mySwiper1 zoomable pcPopup">
       <div class="swiper-wrapper">
@@ -61,6 +64,44 @@
         <div class="swiper-slide"><img src="./images/area/mobile6.svg" id="mb6"></div>
       </div>
     </div>
+
+    <div class="swiper mySwiper3 zoomable pcPopup2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/IncubationPC1.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/IncubationPC2.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/IncubationPC3.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/IncubationPC4.svg"></div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper4 zoomable mobile2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/Incubation1.svg" id="mb21"></div>
+        <div class="swiper-slide"><img src="./images/area/Incubation2.svg" id="mb22"></div>
+        <div class="swiper-slide"><img src="./images/area/Incubation3.svg" id="mb23"></div>
+        <div class="swiper-slide"><img src="./images/area/Incubation4.svg" id="mb24"></div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper5 zoomable pcPopup3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/PVPPC1.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/PVPPC2.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/PVPPC3.svg"></div>
+        <div class="swiper-slide"><img src="./images/area/PVPPC4.svg"></div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper6 zoomable mobile3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/area/PVP1.svg" id="mb31"></div>>
+        <div class="swiper-slide"><img src="./images/area/PVP2.svg" id="mb32"></div>
+        <div class="swiper-slide"><img src="./images/area/PVP3.svg" id="mb33"></div>
+        <div class="swiper-slide"><img src="./images/area/PVP4.svg" id="mb34"></div>
+      </div>
+    </div>
+
+
 
     <div class="shade1">
       <!-- <div class="shadow2"></div> -->
@@ -207,12 +248,46 @@ var swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 0,
     centeredSlides: true,
   });
+  var swiper3 = new Swiper(".mySwiper3", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1 : 1.5,
+    spaceBetween: 0,
+    centeredSlides: true,
+  });
+  var swiper4 = new Swiper(".mySwiper4", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1 : 1.5,
+    spaceBetween: 0,
+    centeredSlides: true,
+  });
+  var swiper5 = new Swiper(".mySwiper5", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1 : 1.5,
+    spaceBetween: 0,
+    centeredSlides: true,
+  });
+  var swiper6 = new Swiper(".mySwiper6", {
+    speed: 1000,
+    slidesPerView: document.documentElement.clientWidth<478 ? 1 : 1.5,
+    spaceBetween: 0,
+    centeredSlides: true,
+  });
     // const areas = document.querySelectorAll('.area');
     const mask = document.querySelector('.mask');
+
     const pcPopup = document.querySelector('.pcPopup');
     const mobile = document.querySelector('.mobile');
-    const left = document.querySelector('.left_1');
-    const right = document.querySelector('.right_1');
+    const pcPopup2 = document.querySelector('.pcPopup2');
+    const mobile2 = document.querySelector('.mobile2');
+    const pcPopup3 = document.querySelector('.pcPopup3');
+    const mobile3 = document.querySelector('.mobile3');
+
+    const left_1 = document.querySelector('.left_1');
+    const right_1 = document.querySelector('.right_1');
+    const left_2 = document.querySelector('.left_2');
+    const right_2 = document.querySelector('.right_2');
+    const left_3 = document.querySelector('.left_3');
+    const right_3 = document.querySelector('.right_3');
 
     const area1=document.querySelector('.area1');
     const area2=document.querySelector('.area2');
@@ -235,6 +310,16 @@ var swiper1 = new Swiper(".mySwiper1", {
     const mb5 = document.querySelector('#mb5');
     const mb6 = document.querySelector('#mb6');
 
+    const mb21 = document.querySelector('#mb21');
+    const mb22 = document.querySelector('#mb22');
+    const mb23 = document.querySelector('#mb23');
+    const mb24 = document.querySelector('#mb24');
+
+    const mb31 = document.querySelector('#mb31');
+    const mb32 = document.querySelector('#mb32');
+    const mb33 = document.querySelector('#mb33');
+    const mb34 = document.querySelector('#mb34');
+
     mb1.addEventListener('click', () => {
       window.location.href = './mb1.html';
     });
@@ -254,29 +339,96 @@ var swiper1 = new Swiper(".mySwiper1", {
       window.location.href = './mb6.html';
     });
 
+    mb21.addEventListener('click', () => {
+      window.location.href = './mb21.html';
+    });
+    mb22.addEventListener('click', () => {
+      window.location.href = './mb22.html';
+    });
+    mb23.addEventListener('click', () => {
+      window.location.href = './mb23.html';
+    });
+    mb24.addEventListener('click', () => {
+      window.location.href = './mb24.html';
+    });
+
+    mb31.addEventListener('click', () => {
+      window.location.href = './mb31.html';
+    });
+    mb32.addEventListener('click', () => {
+      window.location.href = './mb32.html';
+    });
+    mb33.addEventListener('click', () => {
+      window.location.href = './mb33.html';
+    });
+    mb34.addEventListener('click', () => {
+      window.location.href = './mb34.html';
+    });
+
 mask.addEventListener('click', () => {
   mask.style.display = 'none';
   pcPopup.style.display = 'none';
   mobile.style.display = 'none';
-  left.style.display = 'none';
-  right.style.display = 'none';
+  pcPopup2.style.display = 'none'
+  mobile2.style.display = 'none';
+  pcPopup3.style.display = 'none'
+  mobile3.style.display = 'none';
+  left_1.style.display = 'none';
+  right_1.style.display = 'none';
+  left_2.style.display = 'none';
+  right_2.style.display = 'none';
+  left_3.style.display = 'none';
+  right_3.style.display = 'none';
 });
 area1.addEventListener('click', () => {
   mask.style.display = 'block';
   if(isPC()){
     pcPopup.style.display = 'block';
-    left.style.display = 'block';
-    right.style.display = 'block';
+    left_1.style.display = 'block';
+    right_1.style.display = 'block';
   }else{
     mobile.style.display = 'block';
   }
 });
-left.addEventListener('click', () => {
+area3.addEventListener('click', () => {
+  mask.style.display = 'block';
+  if(isPC()){
+    pcPopup2.style.display = 'block';
+    left_2.style.display = 'block';
+    right_2.style.display = 'block';
+  }else{
+    mobile2.style.display = 'block';
+  }
+});
+area6.addEventListener('click', () => {
+  mask.style.display = 'block';
+  if(isPC()){
+    pcPopup3.style.display = 'block';
+    left_3.style.display = 'block';
+    right_3.style.display = 'block';
+  }else{
+    mobile3.style.display = 'block';
+  }
+});
+
+  left_1.addEventListener('click', () => {
     swiper1.slidePrev();
   })
 
-  right.addEventListener('click', () => {
+  right_1.addEventListener('click', () => {
     swiper1.slideNext();
+  })
+  left_2.addEventListener('click', () => {
+    swiper3.slidePrev();
+  })
+  right_2.addEventListener('click', () => {
+    swiper3.slideNext();
+  })
+  left_3.addEventListener('click', () => {
+    swiper5.slidePrev();
+  })
+  right_3.addEventListener('click', () => {
+    swiper5.slideNext();
   })
 
 

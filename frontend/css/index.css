@@ -39,6 +39,18 @@ body {
   .pcPopup{
     display: none;
   }
+  .mobile2 {
+    display: none;
+  }
+  .pcPopup2{
+    display: none;
+  }
+  .mobile3 {
+    display: none;
+  }
+  .pcPopup3{
+    display: none;
+  }
   .swiper{
     position: fixed;
     top: 7.5rem;
@@ -631,10 +643,70 @@ z-index: 1;
     background: url(../images/area/right.svg) no-repeat ;
     background-size: 100%;
   }
+  .left_2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/left.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .right_2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/right.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .left_3 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/left.svg) no-repeat ;
+    background-size: 100%;
+  }
+  .right_3 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0.6rem;
+    width: 1rem;
+    height: 1rem;
+    z-index:999;
+    background: url(../images/area/right.svg) no-repeat ;
+    background-size: 100%;
+  }
   .mobile {
     display: none;
   }
   .pcPopup {
+    display: none;
+  }
+  .mobile2 {
+    display: none;
+  }
+  .pcPopup2 {
+    display: none;
+  }
+  .mobile3 {
+    display: none;
+  }
+  .pcPopup3 {
     display: none;
   }
   .swiper{
